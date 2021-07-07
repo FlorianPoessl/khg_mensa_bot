@@ -75,7 +75,7 @@ for idx, meal in enumerate(mealDay):
 
 bot = telegram.Bot(token=config.bot_token)
 bot.sendMessage(chat_id=-580726026, text=output, parse_mode=telegram.ParseMode.HTML)
-bot.sendMessage(chat_id=-1001584796761, text=output, parse_mode=telegram.ParseMode.HTML)
+#bot.sendMessage(chat_id=-1001584796761, text=output, parse_mode=telegram.ParseMode.HTML)
 
 
 
