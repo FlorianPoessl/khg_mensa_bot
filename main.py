@@ -1,5 +1,6 @@
 import urllib.request
 import telegram
+import config
 
 from datetime import datetime
 
@@ -72,8 +73,10 @@ for idx, meal in enumerate(mealDay):
     output += '<b>Option ' + str(menu) + '</b>' + '\n'
     output += meal + '\n' + '\n'
 
-bot = telegram.Bot(token='1885751471:AAET_ZIg3azTjTxwoawrqf4rpEPEQLS7mgk')
+bot = telegram.Bot(token=config.bot_token)
 bot.sendMessage(chat_id=-580726026, text=output, parse_mode=telegram.ParseMode.HTML)
+bot.sendMessage(chat_id=-1001584796761, text=output, parse_mode=telegram.ParseMode.HTML)
+
 
 
 
